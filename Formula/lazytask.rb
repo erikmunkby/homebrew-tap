@@ -2,15 +2,15 @@ class Lazytask < Formula
   desc "A task manager built for AI coding agents"
   homepage "https://github.com/erikmunkby/lazytask"
   license "MIT"
-  version "0.5.0"
+  version "0.6.0"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/erikmunkby/lazytask/releases/download/lazytask-v#{version}/lt-aarch64-apple-darwin-lazytask-v#{version}.tar.gz"
-      sha256 "cbdcc4df65e208d437da18932cc63f72ea0a4acc165582150770f5be6d1ef275"
+      sha256 "7854b64c90a9f5116d24662fd04720f66c55b431c24a2163cc919bab00833d60"
     else
       url "https://github.com/erikmunkby/lazytask/releases/download/lazytask-v#{version}/lt-x86_64-apple-darwin-lazytask-v#{version}.tar.gz"
-      sha256 "1a6d449656709303497484fa16aa9356e9fd2f29b0f5a37cfb28f9f6bfbff15f"
+      sha256 "2d05e68524f5114fab2e458b6609a8a71de6829ef657bb79a5578f217ac3ca7b"
     end
   end
 
@@ -19,7 +19,7 @@ class Lazytask < Formula
       odie "lazytask is not yet available for Linux ARM"
     else
       url "https://github.com/erikmunkby/lazytask/releases/download/lazytask-v#{version}/lt-x86_64-unknown-linux-gnu-lazytask-v#{version}.tar.gz"
-      sha256 "4416c6d462042f40fb2ad60aba4c7d26419a28b1ee9885689b3a247c8c617e33"
+      sha256 "eebed631e77ea99e1d47fc2ec810fd0cc7a4c473930265be7731c3fbd452cfb5"
     end
   end
 
